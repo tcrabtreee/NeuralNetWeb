@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <p>Data URL:</p>
+    <input id="dataurlinput" style="width: 99%">
+    <p>Inputs:</p>
+    <input class="input" id="inputNum1" placeholder="input1">
+    <input class="input" id="inputNum2" placeholder="input2">
+    <input class="input" id="inputNum3" placeholder="input3">
+    <input class="input" id="inputNum4" placeholder="input4">
+    <input class="input" id="inputNum5" placeholder="input5">
+    <input class="input" id="inputNum6" placeholder="input6">
+    <input class="input" id="inputNum7" placeholder="input7">
+    <input class="input" id="inputNum8" placeholder="input8">
+    <input class="input" id="inputNum9" placeholder="input9">
+    <p>Outputs:</p>
+    <input class="output" id="outputNum1" placeholder="output1">
+    <input class="output" id="outputNum2" placeholder="output2">
+    <input class="output" id="outputNum3" placeholder="output3">
+    <input class="output" id="outputNum4" placeholder="output4">
+    <br>
+    <p>Type:</p>
+    <select id="typeSelect">
+        <option>classification</option>
+        <option>regression</option>
+    </select>
+    <p>Select Processor:</p>
+    <button onclick="processor('cpu')">CPU</button>
+    <button onclick="processor('webgl')">GPU (WebGL)</button>
+    <hr>
+    <p>Epochs (Passes):</p>
+    <input id="epochsNum" placeholder="Epochs">
+    <br>
+    <p>Batch Size:</p>
+    <input id="batchSizeNum" placeholder="Batch Size">
+    <br><br><hr>
+    <p>Predict Inputs (Value):</p>
+    <input class="preinput" id="preinputNum1" placeholder="input1">
+    <input class="preinput" id="preinputNum2" placeholder="input2">
+    <input class="preinput" id="preinputNum3" placeholder="input3">
+    <input class="preinput" id="preinputNum4" placeholder="input4">
+    <input class="preinput" id="preinputNum5" placeholder="input5">
+    <input class="preinput" id="preinputNum6" placeholder="input6">
+    <input class="preinput" id="preinputNum7" placeholder="input7">
+    <input class="preinput" id="preinputNum8" placeholder="input8">
+    <input class="preinput" id="preinputNum9" placeholder="input9">
+    <br><br>
+    <button onclick="predict()">Predict</button>
+    <p id="progress">Progress:</p>
+    <p id="result">Result: </p>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
